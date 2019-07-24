@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <!-- Metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links -->
+    <link rel="icon" type="image/png" href="#" />
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800" rel="stylesheet">
+    <!-- Plugins CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="css/plugin.css" rel="stylesheet" />
+    <!-- style CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- FRONT AWESOME AND UNICODE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.css" integrity="sha256-NzJV8FM8PMh2oiegnNlDYmcbEUm4ERJmZIlNftbJxHU=" crossorigin="anonymous" />
+    <link href='http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+
+    <!-- END OF IT -->
+
+    <title>Events</title>
+</head>
+
+
+<body>
+
+<!--Page Wrapper starts-->
+<div class="page-wrapper">
+    <!--header starts-->
+    <header class="header transparent scroll-hide">
+        <!--Main Menu starts-->
+        <div class="site-navbar-wrap v2">
+            <div class="container">
+                <div class="site-navbar">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 col-6">
+                            <a class="navbar-brand" href="#"><img src="#" alt="logo" class="img-fluid"></a>
+                        </div>
+                        <div class="col-md-8 col-6">
+                            <nav class="site-navigation float-left">
+                                <div class="container">
+                                    <ul class="site-menu js-clone-nav d-none d-lg-block">
+                                        <li>
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="has-children">
+                                            <a href="#">Event</a>
+                                            <ul class="dropdown">
+                                                <li><a href="event-listing.html">All Event</a></li>
+                                                <li><a href="category.html">Event category</a></li>
+                                                <li><a href="event-details.html">Event Details</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="contact.html">Contact us</a></li>
+                                        <li><a href="login.html">Login / Register</a></li>
+                                        <li><a href="profile.html">Profile</a></li>
+                                        <li class="d-lg-none"><a class="btn v1" href="">Add Event <i class="fa fa-plus"></i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <div class="d-lg-none sm-right">
+                                <a href="#" class="mobile-bar js-menu-toggle">
+                                    <span class="ion-android-menu-new"></span>
+                                </a>
+                            </div>
+                            <div class="add-list float-right">
+                                <a class="btn v8" href="create-event.html">Add Event <i class="fa fa-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--mobile-menu starts -->
+                <div class="site-mobile-menu">
+                    <div class="site-mobile-menu-header">
+                        <div class="site-mobile-menu-close  js-menu-toggle">
+                            <span class="ion-ios-close-empty-new"></span>
+                        </div>
+                    </div>
+                    <div class="site-mobile-menu-body"></div>
+                </div>
+                <!--mobile-menu ends-->
+            </div>
+        </div>
+        <!--Main Menu ends-->
+    </header>
+    <!--Header ends-->
+
+
+
+
+    <!--Main section starts-->
+    <div class="hero v2 section-padding" style="background-image: url('images/bg-desktop-rapoport-music.jpg')">
+        <div class="overlay op-5"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="hero-title v2">
+                        Event
+                    </h1>
+                    <p class="hero-desc v2">
+                        You can’t imagine, what is waiting for you around your city
+                    </p>
+                </div>
+                <div class="col-md-12 text-center mar-top-20">
+                    <form class="hero__form v2">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12">
+                                <input class="hero__form-input custom-select" type="text" name="place-event" id="place-event" placeholder="What are you looking for?">
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+                                <select class="hero__form-input  custom-select">
+                                    <option>Select Location </option>
+                                    <option>Lagos</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-md-12">
+
+                                <select class="hero__form-input  custom-select">
+                                    <option>Select Categories</option>
+                                    <option>Art's</option>
+                                    <option>Health</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-2 col-md-12">
+                                <div class="submit_btn text-right md-left">
+                                    <button class="btn v3  mar-right-5" type="submit"><i class="ion-search-new" aria-hidden="true"></i> Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--main section ends-->
+
+
+
+    <!--Popular Categories starts-->
+    <div class="popular-cities section-padding mar-top-20">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="section-title v1">Explore Your event Categories</h2>
+                </div>
+                <div class="col-md-12">
+                    <div class="swiper-container popular-place-wrap v2 swiper-container-horizontal">
+                        <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-2280px, 0px, 0px);">
+
+
+                            <div class="swiper-slide popular-item slidediv" style=" margin-right: 30px;" data-swiper-slide-index="0">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Parties</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide popular-item slidediv" style=" margin-right: 30px;" data-swiper-slide-index="1">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Parties</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="swiper-slide popular-item swiper-slide-prev slidediv" style=" margin-right: 30px;" data-swiper-slide-index="2">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Music</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide popular-item swiper-slide-active slidediv" style=" margin-right: 30px;" data-swiper-slide-index="3">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Arts</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="swiper-slide popular-item swiper-slide-next slidediv" style=" margin-right: 30px;" data-swiper-slide-index="4">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Bussiness</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide popular-item swiper-slide-duplicate slidediv" style=" margin-right: 30px;" data-swiper-slide-index="0">
+                                <div class="single-place">
+                                    <img class="single-place-image" src="images/spain.jpg" alt="place-image">
+                                    <div class="single-place-content">
+                                        <h2 class="single-place-title">
+                                            <a href="#">Lagos</a>
+                                        </h2>
+                                        <ul class="single-place-list">
+                                            <li><span>5</span> Music</li>
+                                            <li><span>255</span> Lagos</li>
+                                        </ul>
+                                        <a class="btn v6 explore-place" href="#">Explore</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    <div class="slider-btn v1 popular-next style2" tabindex="0" role="button" aria-label="Next slide"><i class="fa fa-arrow-right"></i></div>
+                    <div class="slider-btn v1 popular-prev style2" tabindex="0" role="button" aria-label="Previous slide"><i class="fa fa-arrow-left"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Popular Categories ends-->
+
+
+    <!--Event Listing Posts starts-->
+    <div class="blog-posts v1 pad-bot-60 pad-top-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="section-title v1">Live your best life</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event1.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event2.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Lagos Teachers Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Dec 5th , 2018 by <a href="#" class="text-dark">Adam D'Costa</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event3.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">Top Lagos Teachers Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Mar 13th , 2018 by <a href="#" class="text-dark">Mark Henri</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event3.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event2.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event1.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event3.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event1.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4">
+                    <div class="card single-blog-item v1">
+                        <img src="images/event2.jpg" alt="...">
+                        <a href="#" class="blog-cat btn v6 red">Free</a>
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="#">2019 National Business Conference</a></h4>
+                            <div class="bottom-content">
+                                <p class="date">Sep 28th , 2018 by <a href="#" class="text-dark">Louis Fonsi</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--Event Listing  Posts ends-->
+
+
+    <!-- Scroll to top starts-->
+    <span class="scrolltotop"><i class="ion-arrow-up-c-new"></i></span>
+    <!-- Scroll to top ends-->
+</div>
+<!--Page Wrapper ends-->
+
+
+<!--Footer Starts-->
+<div class="footer-wrapper no-pad-tb v2">
+    <div class="footer-top-area section-padding">
+        <div class="container">
+            <div class="row nav-folderized">
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-logo">
+                        <a href="index.html"> <img src="#" alt="logo"></a>
+                        <div class="company-desc">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio excepturi nam totam sequi, ipsam consequatur repudiandae libero illum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-content nav">
+                        <h2 class="title">Helpful Links</h2>
+                        <ul class="list">
+                            <li><a class="link-hov style2" href="#">Login</a></li>
+                            <li><a class="link-hov style2" href="#">My Account</a></li>
+                            <li><a class="link-hov style2" href="#">Add Event</a></li>
+                            <li><a class="link-hov style2" href="#">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-content nav">
+                        <h2 class="title">Category</h2>
+                        <ul class="list">
+                            <li><a class="link-hov style2" href="#">Shop</a></li>
+                            <li><a class="link-hov style2" href="#">Travel</a></li>
+                            <li><a class="link-hov style2" href="#">Sport</a></li>
+                            <li><a class="link-hov style2" href="#">Restaurant</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                    <div class="footer-content nav">
+                        <h2 class="title">Contact us</h2>
+                        <ul class="list footer-list">
+                            <li>
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="text">lagos nigeria</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-inbox"></i>
+                                    </div>
+                                    <div class="text"><a href="#">info@com</a></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact-info">
+                                    <div class="icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="text">+44 000 0000 0000</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="social-buttons style2">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="payment-method">
+                        <img src="images/payment-1.png" alt="...">
+                        <img src="images/payment-2.png" alt="...">
+                        <img src="images/payment-3.png" alt="...">
+                    </div>
+                </div>
+                <div class="col-md-6 text-right sm-left">
+                    <ul class="additional-link">
+                        <li><a href="#">Terms &amp; Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer ends-->
+
+<!--Scripts starts-->
+<!--plugin js-->
+<script src="js/plugin.js"></script>
+<!--google maps-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_8C7p0Ws2gUu7wo0b6pK9Qu7LuzX2iWY&amp;libraries=places&amp;callback=initAutocomplete"></script>
+<!--Main js-->
+<script src="js/main.js"></script>
+<!--Scripts ends-->
+</body>
+
+
+</html>
